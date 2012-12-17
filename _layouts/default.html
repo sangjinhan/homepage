@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sangjin Han">
+
+    <title>Sangjin Han: Academic Homepage</title>
+
+    <!-- TODO: remove "http:" -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+
+    <style>
+      body {
+        font-size: 15px;
+      }
+
+      hr {
+        border-top: 2px solid #e5e5e5;
+      }
+
+      .navbar { 
+        padding-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <span class="brand">Sangjin Han</span>
+          <ul class="nav">
+            <li {% if page.section == 'home'%} class="active" {% endif %} >
+              <a href="index.html">Home</a>
+            </li>
+            <li {% if page.section == 'publications'%} class="active" {% endif %} >
+              <a href="publications.html">Publications</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      {{content}}
+
+      <hr>
+      <small>
+        This webpage was built on
+        <a href="http://twitter.github.com/bootstrap">Bootstrap</a> and 
+        <a href="https://github.com/mojombo/jekyll">Jekyll</a>. 
+        You can find the source code here. Last updated: {{'now' | date: "%h %d, %Y"}}
+      </small>
+    </div>
+  </body>
+</html>
