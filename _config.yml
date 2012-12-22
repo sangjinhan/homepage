@@ -1,2 +1,3 @@
 auto: true
 baseurl: /~sangjin/
+exclude: README.md, deploy.sh
