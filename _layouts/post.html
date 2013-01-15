@@ -1,0 +1,22 @@
+{% include header.shtml %}
+<div class="row">
+  <div class="span8">
+    <small>Posted on {{ page.date | date: "%h %d, %Y" }}</small>
+    {{content}}
+  </div>
+  <div class="span4">
+    <h3>Articles</h3>
+    <ul class="nav nav-pills nav-stacked">
+      {% for post in site.posts %}
+        <li {% if post.url == page.url %} class="active" {% endif %} >
+          <a href="{{site.baseurl}}{{post.url}}">
+            {{ post.title }}
+            <br>
+            <small>{{ post.date | date: "%h %d, %Y" }}</small> 
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% include footer.shtml %}

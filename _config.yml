@@ -1,3 +1,4 @@
 auto: true
-baseurl: /~sangjin/
+baseurl: /~sangjin
 exclude: README.md, deploy.sh
+pygments: true

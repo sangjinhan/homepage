@@ -17,3 +17,5 @@ Feel free to copy this webpage and customize it for your own:
 4. Copy the result in \_site/ to your web server
 
 (for me, the deploy.sh file does the step 3 and 4)
+
+Special thanks to [@fratpat](http://twitter.com/fratpat)

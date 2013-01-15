@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sangjin Han">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="{{site.baseurl}}/">
+
+    <title>{{page.title}}</title>
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <!--
+    Not using yet...
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+    -->
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37166920-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+    <style>
+      body {
+        font-size: 15px;
+      }
+
+      h1 { font-size: 30px; line-height: 135%;}
+      h2 { font-size: 24px; line-height: 135%;}
+      h3 { font-size: 20px; line-height: 135%;}
+      h4 { font-size: 16px; }
+      h5 { font-size: 15px; }
+      h6 { font-size: 13px; }
+
+      hr {
+        border-top: 2px solid #e5e5e5;
+      }
+
+      .navbar { 
+        padding-bottom: 20px;
+      }
+
+      p {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <span class="brand">Sangjin Han</span>
+          <ul class="nav">
+            <li {% if page.section == 'home'%} class="active" {% endif %} >
+              <a href="index.html">Home</a>
+            </li>
+            <li {% if page.section == 'publications'%} class="active" {% endif %} >
+              <a href="publications.html">Publications</a>
+            </li>
+            <li {% if page.section == 'blog'%} class="active" {% endif %} >
+              <a href="blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
