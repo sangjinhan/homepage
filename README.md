@@ -1,7 +1,7 @@
 Academic homepage example
 =========================
 
-This is source code for my academic [homepage](http://eecs.berkeley.edu/~sangjin/).
+This is source code for my academic [homepage](http://www.eecs.berkeley.edu/~sangjin/).
 
 Things we all know:
 
@@ -12,6 +12,8 @@ Things we all know:
 Feel free to copy this webpage and customize it for your own:
 
 1. Install Jekyll.
-1. Modify the contents.
-1. Run Jekyll.
-1. Copy the result in \_site/ to your web server
+2. Modify the contents.
+3. Run Jekyll.
+4. Copy the result in \_site/ to your web server
+
+(for me, the deploy.sh file does the step 3 and 4)
