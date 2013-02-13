@@ -6,6 +6,15 @@ title: "Sangjin Han: Blog"
 
 <h1> Blog </h1>
 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+      <small>{{ post.date | date: "%h %d, %Y" }}</small> 
+    </li>
+  {% endfor %}
+</ul>
+
 <p>
 I will post random things about my research, Linux, networking, hobby coding, etc. 
 I have something called "the grad writing phobia", and this is my desperate
@@ -16,12 +25,3 @@ struggle to overcome it. Prepare a pinch of salt if you must read.
 Sorry for the broken English. Writing in a second language is damn hard, you
 know.
 </p>
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
-      <small>{{ post.date | date: "%h %d, %Y" }}</small> 
-    </li>
-  {% endfor %}
-</ul>
