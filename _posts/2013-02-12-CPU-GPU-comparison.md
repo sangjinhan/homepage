@@ -40,7 +40,7 @@ a bunch of academic papers that make clearly unfair comparisons between the
 CPU and GPU implementations, in order for their GPU implementations to look 
 shinier than actually are. If my published paper was not clear enough to avoid 
 those kinds of misunderstanding, it is primarily my fault.
-But let me depend our paper a little bit, by explaining some 
+But let me defend our paper a little bit, by explaining some 
 contexts on how to make a _fair comparison_ in general and how it applied to
 our work.
 
