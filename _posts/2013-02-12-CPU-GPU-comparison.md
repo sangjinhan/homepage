@@ -125,7 +125,7 @@ the latest OpenSSL versions runs much faster than it used to be).
 The reason is threefold.
 
 1. RSA is simply not parallelizable, at a coarse-grained scale for CPUs. 
-   Simply put, a RSA operation with a 1k-bit key requires roughly 768 modular
+   Simply put, one RSA operation with a 1k-bit key requires roughly 768 modular
    multiplications of large integers, and each multiplication is dependent on 
    the result of the previous multiplication. 
    The only thing we can do is to parallelize each multiplication 
@@ -137,7 +137,7 @@ The reason is threefold.
    strength to RSA. Seriously.
 
 2. The only coarse-grained parallelism found in RSA is from Chinese Remainder
-   Theorem, which breaks a RSA operation into two independent modular
+   Theorem, which breaks an RSA operation into two independent modular
    exponentiations, thus runnable on two CPU cores. While this can reduce
    the latency of each RSA operation, note that it does not help the total
    throughput, since the total amount of work remains the same.
@@ -192,10 +192,10 @@ Here comes the list:
 * Our paper lacks the context described above: "why we showed the single-core
   CPU performance".
 
-* The paper does not explicitly says about what would be the expected 
+* The paper does not explicitly say about what would be the expected 
   throughput if we run the non-parallelizable algorithm on multiple CPU cores, 
   individually. Clearly (single-core performance) * (# of cores) is the upper 
-  bound, since since you cannot expect super-linear speedup for running on
+  bound, since you cannot expect super-linear speedup for running on
   independent data. However, the speedup may be significantly lower than the
   number of cores, as commonly seen in multi-core applications.
   The answer was, _it shows almost perfect linear scalability_, since RSA
