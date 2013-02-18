@@ -8,6 +8,7 @@
 
     <title>{{page.title}}</title>
 
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for Sangjin's Blog" href="rss.xml" />
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
 
     <!--
