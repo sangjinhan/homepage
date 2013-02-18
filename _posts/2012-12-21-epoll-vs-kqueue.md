@@ -72,7 +72,7 @@ epoll_ctl() and epoll_wait() essentially corresponds to the declare_interest() a
 
 Internally, the epoll implementation in the Linux kernel is not very different from the select()/poll() implementations. The only difference is whether it is stateful or not. This is because the design goal of them is exactly the same (event multiplexing for sockets/pipes). Refer to fs/select.c (for select and poll) and fs/eventpoll.c (for epoll) in the Linux source tree for more information.
 
-You can also find some initial thoughts of Linux Torvalds on the early version of epoll [here](http://lkml.indiana.edu/hypermail/linux/kernel/0010.3/0003.html).
+You can also find some initial thoughts of Linus Torvalds on the early version of epoll [here](http://lkml.indiana.edu/hypermail/linux/kernel/0010.3/0003.html).
 
 ## kqueue in FreeBSD
 
