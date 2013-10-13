@@ -24,10 +24,16 @@ is broken. If I read this tweet at night I would have completely lost my sleep.
 The most problematic(?) parts of the paper are as follows, but please read the 
 full paper if interested:
 
-<p style="text-align: center" markdown="1">
-![Figure4](static/blog_images/2013-02-12-fig.png)
-![Table1](static/blog_images/2013-02-12-table.png)
-![Text](static/blog_images/2013-02-12-text.png)
+<p style="text-align: center">
+<img src='static/blog_images/2013-02-12-fig.png' alt='Figure4' style="width: 100%"> 
+</p>
+
+<p style="text-align: center">
+<img src='static/blog_images/2013-02-12-table.png' alt='Table1' /> 
+</p>
+
+<p style="text-align: center">
+<img src='static/blog_images/2013-02-12-text.png' alt='Text' />
 </p>
 
 The figure, table, and text compare the RSA performance between the GPU

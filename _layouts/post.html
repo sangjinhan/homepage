@@ -1,6 +1,6 @@
 {% include header.shtml %}
 <div class="row">
-  <div class="span8">
+  <div class="col-md-9">
     <small>Posted on {{ page.date | date: "%h %d, %Y" }}</small>
     {{content}}
     <br>
@@ -19,7 +19,7 @@
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   </div>
-  <div class="span4">
+  <div class="col-md-3">
     <h3>Articles</h3>
     <ul class="nav nav-pills nav-stacked">
       {% for post in site.posts %}

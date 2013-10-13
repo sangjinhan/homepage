@@ -9,7 +9,7 @@
     <title>{{page.title}}</title>
 
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for Sangjin's Blog" href="rss.xml" />
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!--
     Not using yet...
@@ -32,6 +32,8 @@
     <style>
       body {
         font-size: 15px;
+        padding-top: 55px;
+        padding-bottom: 20px;
       }
 
       h1 { font-size: 30px; line-height: 135%;}
@@ -45,21 +47,19 @@
         border-top: 2px solid #e5e5e5;
       }
 
-      .navbar { 
-        padding-bottom: 20px;
-      }
-
       p {
         text-align: justify;
       }
     </style>
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-static-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <span class="brand">Sangjin Han</span>
-          <ul class="nav">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <span class="navbar-brand">Sangjin Han</span>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
             <li {% if page.section == 'home'%} class="active" {% endif %} >
               <a href="index.html">Home</a>
             </li>
@@ -72,7 +72,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
 
     <div class="container">
 
